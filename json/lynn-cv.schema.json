@@ -1,0 +1,136 @@
+{
+  "title": "Lynn CV Schema",
+  "type": "object",
+  "basics": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "experience": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "companyName": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "highlights": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "education": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "institution": {
+          "type": "string"
+        },
+        "major": {
+          "type": "string"
+        },
+        "degree": {
+          "type": "string"
+        },
+        "graduationDate": {
+          "type": "string"
+        },
+        "courses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "skills": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string"
+        },
+        "yearsExperience": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "languageSpoken": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "fluency": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
